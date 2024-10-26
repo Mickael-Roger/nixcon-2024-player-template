@@ -6,6 +6,10 @@
 }:
 let
   cfg = config.playerConfig;
+  toto = pkgs.writeTextDir "index.html"
+  ''
+  Contents of File
+  '';
 in
 {
   options.playerConfig = {
@@ -58,7 +62,8 @@ in
       virtualHosts = {
         "default" = {
           default = true;
-          locations."/".proxyPass = "http://127.0.0.1:8080";
+          #locations."/".proxyPass = "http://127.0.0.1:8080";
+          root = "${toto}"
         };
       };
     };
