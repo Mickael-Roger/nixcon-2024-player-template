@@ -88,7 +88,7 @@ in
 
     networking = {
       hostName = "player";
-      firewall.allowedTCPPorts = [ 80 ];
+      firewall.allowedTCPPorts = [ 80 8080 ];
     };
 
     virtualisation.vmVariant.services.getty.autologinUser = "me";
