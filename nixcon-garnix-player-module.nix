@@ -55,12 +55,13 @@ in
 
     services.nginx = {
       enable = true;
-      virtualHosts = {
-        "default" = {
-          default = true;
-          #locations."/".proxyPass = "http://127.0.0.1:8080";
-        };
-      };
+      #virtualHosts = {
+      #  "default" = {
+      #    default = true;
+
+      #    #locations."/".proxyPass = "http://127.0.0.1:8080";
+      #  };
+      #};
     };
 
     users.users.me = {
