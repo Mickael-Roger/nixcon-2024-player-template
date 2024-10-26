@@ -62,7 +62,7 @@ in
       virtualHosts = {
         "default" = {
           default = true;
-          locations."/".proxyPass = "https://www.google.fr";
+          locations."/".proxyPass = "https://server.main.nixcon-2024-player-template.lennypenny.garnix.me/";
         };
       };
     };
